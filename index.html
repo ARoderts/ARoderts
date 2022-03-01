@@ -24,7 +24,7 @@
  var score = 0;
  var melon_speed = 3;
  var FPS = 40;                        // How many frames per second
- var time_remaining = 20;
+ var time_remaining = 180;
 
 
  function restart_game() {
@@ -32,7 +32,7 @@
      // some important variables back to the start.
      //
      // Alternatively they could just reload the page
-     time_remaining = 20;
+     time_remaining = 180;
      score = 0;
      melon_speed = 3;
      }
@@ -84,7 +84,7 @@
 
     if (ImagesTouching(bug_x, bug_y, BugImg, melon_x, melon_y, MelonImg)) {  // check for touching
         score= score + 1;                                                    // add one to score
-        melon_speed = melon_speed + 0.5;                                     // and make it fall a bit faster
+        melon_speed = melon_speed + 1;                                     // and make it fall a bit faster
         melon_x= -MelonImg.width;                                            // hide the melon so the score doesn't rocket
         }
     } 
