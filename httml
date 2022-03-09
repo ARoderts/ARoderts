@@ -14,7 +14,7 @@
  var bug_x = 0;
  var bug_y = 0;
  var BugImg = new Image();
- BugImg.src = "https://s2js.com/img/etc/";         // The bug
+ BugImg.src = "https://s2js.com/img/etc/monkey.jpg";         // The bug
 
  var melon_x = 0;
  var melon_y = 0;
