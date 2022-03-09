@@ -4,7 +4,7 @@
  </head>
 
 <body>
-<canvas id="myCanvas" width=300 height=300 style="background:url('/img/etc/boardwalk.png'); background-size: cover">
+<canvas id="myCanvas" width=300 height=300 style="background:url('/img/etc/boardwalk.png'); background-size: Jungle.webp">
   </canvas> 
 <script>
 
@@ -14,7 +14,7 @@
  var bug_x = 0;
  var bug_y = 0;
  var BugImg = new Image();
- BugImg.src = "https://s2js.com/img/etc/ladybug.png";         // The bug
+ BugImg.src = "https://s2js.com/img/etc/";         // The bug
 
  var melon_x = 0;
  var melon_y = 0;
