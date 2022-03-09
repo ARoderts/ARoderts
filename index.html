@@ -22,19 +22,19 @@
  MelonImg.src = "https://s2js.com/img/etc/watermelon2.png";  // The melon
 
  var score = 0;
- var melon_speed = 3;
+ var melon_speed = 1;
  var FPS = 60;                        // How many frames per second
  var time_remaining = 180;
 
 
- function restart_game() {
+ function restart_game(s) {
      // This gets called when the 'S' key is pressed and just sets 
      // some important variables back to the start.
      //
      // Alternatively they could just reload the page
      time_remaining = 180;
      score = 0;
-     melon_speed = 3;
+     melon_speed = 1;
      }
 
  function ImagesTouching(x1, y1, img1, x2, y2, img2) {
@@ -95,8 +95,8 @@
  function MyKeyDownHandler (MyEvent) { 
    if (MyEvent.keyCode == 37 && bug_x > 0) {bug_x = bug_x - 10;}                          // left
    if (MyEvent.keyCode == 39 && bug_x+BugImg.width < myCanvas.width) {bug_x = bug_x+10;}  // right
-   if (MyEvent.keyCode == 83) restart_game();                                             // S to restart 
-   MyEvent.preventDefault();
+   if (MyEvent.keyCode == 83) restart_game(s);                                             // S to restart 
+   MyEvent.preventDefault(s);
    }
 
  addEventListener("keydown", MyKeyDownHandler);                      // listen for keystrokes  
